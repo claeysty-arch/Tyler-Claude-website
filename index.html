@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tyler — Designer & Developer</title>
+  <meta name="description" content="Tyler — Designer & developer crafting motion-driven, accessible digital experiences." />
+  <meta name="theme-color" content="#18181B" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- NAV -->
+  <header class="nav" role="banner">
+    <a href="#top" class="brand" aria-label="Tyler — Home">
+      <svg viewBox="0 0 40 40" width="28" height="28" aria-hidden="true">
+        <path d="M4 6h32M20 6v28" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <span>Tyler</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle color theme" type="button">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-primary">Let's talk</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow reveal">
+          <span class="pulse"></span> Available for select projects · 2026
+        </p>
+
+        <h1 class="hero-title reveal">
+          <span class="line">Design that moves.</span>
+          <span class="line"><em>Code</em> that lasts.</span>
+        </h1>
+
+        <p class="hero-lead reveal">
+          I'm <strong>Tyler</strong> — a designer &amp; developer crafting
+          motion-driven, accessible digital experiences for ambitious brands.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a href="#work" class="btn btn-primary btn-lg">
+            See selected work
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost btn-lg">Start a project</a>
+        </div>
+
+        <dl class="hero-stats reveal">
+          <div>
+            <dt>Years crafting</dt>
+            <dd><span data-count="9">0</span>+</dd>
+          </div>
+          <div>
+            <dt>Projects shipped</dt>
+            <dd><span data-count="47">0</span></dd>
+          </div>
+          <div>
+            <dt>Happy clients</dt>
+            <dd><span data-count="32">0</span></dd>
+          </div>
+          <div>
+            <dt>Awards</dt>
+            <dd><span data-count="6">0</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-orb" aria-hidden="true"></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-label="Brands I've worked with">
+      <div class="marquee-track">
+        <span>Linear</span><span class="dot">•</span>
+        <span>Vercel</span><span class="dot">•</span>
+        <span>Figma</span><span class="dot">•</span>
+        <span>Stripe</span><span class="dot">•</span>
+        <span>Notion</span><span class="dot">•</span>
+        <span>Arc</span><span class="dot">•</span>
+        <span>Raycast</span><span class="dot">•</span>
+        <span>Framer</span><span class="dot">•</span>
+        <!-- duplicated for seamless loop -->
+        <span>Linear</span><span class="dot">•</span>
+        <span>Vercel</span><span class="dot">•</span>
+        <span>Figma</span><span class="dot">•</span>
+        <span>Stripe</span><span class="dot">•</span>
+        <span>Notion</span><span class="dot">•</span>
+        <span>Arc</span><span class="dot">•</span>
+        <span>Raycast</span><span class="dot">•</span>
+        <span>Framer</span><span class="dot">•</span>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Recent projects that pushed pixels&nbsp;&amp; product.</h2>
+        </header>
+
+        <div class="filter-bar reveal" role="tablist" aria-label="Project filters">
+          <button class="chip is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="chip" role="tab" aria-selected="false" data-filter="web">Web</button>
+          <button class="chip" role="tab" aria-selected="false" data-filter="brand">Brand</button>
+          <button class="chip" role="tab" aria-selected="false" data-filter="product">Product</button>
+          <button class="chip" role="tab" aria-selected="false" data-filter="motion">Motion</button>
+        </div>
+
+        <div class="projects" id="projects">
+          <article class="project project-lg reveal" data-tags="web product" style="--accent:#2563EB">
+            <div class="project-visual visual-1" aria-hidden="true">
+              <div class="mockup">
+                <div class="mockup-bar"><span></span><span></span><span></span></div>
+                <div class="mockup-body">
+                  <div class="m-line w-60"></div>
+                  <div class="m-line w-40"></div>
+                  <div class="m-grid">
+                    <div></div><div></div><div></div><div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>Web</span><span>Product</span><span>2025</span>
+              </div>
+              <h3>Aurora — Analytics OS</h3>
+              <p>A real-time analytics platform with cinematic dashboards, keyboard-first nav, and zero-jank charts.</p>
+              <a class="project-link" href="#">View case study
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="brand motion" style="--accent:#F97316">
+            <div class="project-visual visual-2" aria-hidden="true">
+              <div class="brand-card">
+                <div class="logo-mark">N</div>
+                <div class="brand-text">
+                  <strong>Nimbus</strong>
+                  <em>Identity system</em>
+                </div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags"><span>Brand</span><span>Motion</span><span>2025</span></div>
+              <h3>Nimbus Collective</h3>
+              <p>Full identity, typographic system, and motion language for a next-gen creative agency.</p>
+              <a class="project-link" href="#">View case study
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="product web" style="--accent:#10B981">
+            <div class="project-visual visual-3" aria-hidden="true">
+              <div class="chart">
+                <svg viewBox="0 0 200 100" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0%" stop-color="currentColor" stop-opacity=".4"/>
+                      <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0 80 L20 60 L40 70 L60 40 L80 55 L100 30 L120 45 L140 20 L160 35 L180 15 L200 25 L200 100 L0 100 Z" fill="url(#g1)"/>
+                  <path d="M0 80 L20 60 L40 70 L60 40 L80 55 L100 30 L120 45 L140 20 L160 35 L180 15 L200 25" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags"><span>Product</span><span>Web</span><span>2024</span></div>
+              <h3>Forge — Developer Platform</h3>
+              <p>Design system, marketing site, and docs experience for a devtools company shipping fast.</p>
+              <a class="project-link" href="#">View case study
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="motion" style="--accent:#A855F7">
+            <div class="project-visual visual-4" aria-hidden="true">
+              <div class="orbits">
+                <div class="orbit o1"></div>
+                <div class="orbit o2"></div>
+                <div class="orbit o3"></div>
+                <div class="orbit-core"></div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags"><span>Motion</span><span>Web</span><span>2024</span></div>
+              <h3>Halo — Launch Film</h3>
+              <p>Scroll-driven product launch experience with WebGL orbit system and cinematic typography.</p>
+              <a class="project-link" href="#">View case study
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project project-lg reveal" data-tags="web brand" style="--accent:#EC4899">
+            <div class="project-visual visual-5" aria-hidden="true">
+              <div class="collage">
+                <span class="c c1"></span>
+                <span class="c c2"></span>
+                <span class="c c3"></span>
+                <span class="c c4"></span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags"><span>Web</span><span>Brand</span><span>2023</span></div>
+              <h3>Ember Studio</h3>
+              <p>Art direction and a 12-page editorial website for a boutique industrial design studio.</p>
+              <a class="project-link" href="#">View case study
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="eyebrow">About</p>
+          <h2>I design with restraint and build with care.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            For nine years I've worked at the seam between design and engineering —
+            shaping products that feel effortless because every detail earns its place.
+          </p>
+          <p>
+            Today I partner with founders, product teams, and agencies on work that
+            ranges from brand systems to full-stack product experiences. My toolkit:
+            <strong>Figma, React, TypeScript, Framer Motion, WebGL</strong>.
+          </p>
+
+          <ul class="badges">
+            <li>Design systems</li>
+            <li>Marketing sites</li>
+            <li>Motion &amp; interaction</li>
+            <li>Accessibility (WCAG AA)</li>
+            <li>Performance</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section process">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Process</p>
+          <h2>A tight loop from brief to launch.</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Discover</h3>
+            <p>Goals, audience, constraints. We align on success before anything visual.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Define</h3>
+            <p>Information architecture, narrative, and a design system scoped to ship.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Design</h3>
+            <p>High-fidelity, motion-aware concepts validated on real devices.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">04</span>
+            <h3>Deliver</h3>
+            <p>Production-ready code, accessibility audit, and a launch you're proud of.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="section testimonial">
+      <div class="container">
+        <figure class="reveal">
+          <svg class="quote-mark" viewBox="0 0 48 48" width="52" height="52" aria-hidden="true" fill="currentColor">
+            <path d="M14 10C8 14 4 20 4 28c0 6 4 10 9 10 5 0 8-3 8-8s-3-8-7-8c-1 0-2 0-2 1 0-4 3-8 8-11l-6-2zm22 0c-6 4-10 10-10 18 0 6 4 10 9 10 5 0 8-3 8-8s-3-8-7-8c-1 0-2 0-2 1 0-4 3-8 8-11l-6-2z"/>
+          </svg>
+          <blockquote>
+            Tyler is rare — a designer who actually ships production code,
+            and an engineer with an unreasonably good eye. Our launch metrics
+            spoke for themselves.
+          </blockquote>
+          <figcaption>
+            <strong>Maya Chen</strong> — Head of Product, Aurora
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Have something in mind?<br/>Let's make it&nbsp;real.</h2>
+          <p class="contact-lead">
+            Currently booking projects starting <strong>June 2026</strong>. Reach out with a few details and I'll reply within two business days.
+          </p>
+
+          <ul class="channels">
+            <li>
+              <span>Email</span>
+              <a href="mailto:hello@tyler.design">hello@tyler.design</a>
+            </li>
+            <li>
+              <span>Calendar</span>
+              <a href="#">Book a 20-min intro</a>
+            </li>
+            <li>
+              <span>Socials</span>
+              <a href="#">@tylermakes</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <p class="error" data-for="name"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <p class="error" data-for="email"></p>
+          </div>
+          <div class="field">
+            <label for="budget">Budget range</label>
+            <select id="budget" name="budget">
+              <option value="">Select a range…</option>
+              <option>Under $10k</option>
+              <option>$10k – $25k</option>
+              <option>$25k – $60k</option>
+              <option>$60k+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Tell me about the project</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <p class="error" data-for="message"></p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">
+            Send message
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand brand-lg">
+          <svg viewBox="0 0 40 40" width="32" height="32" aria-hidden="true"><path d="M4 6h32M20 6v28" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+          <span>Tyler</span>
+        </a>
+        <p class="footer-tag">Designer &amp; developer · Based in Brooklyn, NY.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Tyler. Crafted with care.</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
